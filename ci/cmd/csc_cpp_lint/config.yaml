@@ -1,0 +1,99 @@
+tasks:
+  - name: Task 01
+    pattern: task-01-*
+    project:
+      - path: .clang-format
+        optional: True
+      - path: .gitignore
+      - path: .gitlab-ci.yml
+      - path: Makefile
+      - path: myhead.cpp
+      - path: myhexdump.cpp
+    artifacts:
+      - myhexdump
+      - myhead
+    clang_tidy_config: "/etc/clang-tidy"
+
+  - name: Task 02
+    pattern: task-02-*
+    project:
+      - path: .clang-format
+      - path: .gitignore
+      - path: .gitlab-ci.yml
+      - path: Makefile
+      - path: soundex.cpp
+      - path: yahtzee.cpp
+    artifacts:
+      - soundex
+      - yahtzee
+    clang_tidy_config: "/etc/clang-tidy"
+
+  - name: Task 03
+    pattern: task-03-*
+    project:
+      - path: .clang-format
+      - path: .gitignore
+      - path: .gitlab-ci.yml
+      - path: Makefile
+      - path: freq_umap.cpp
+      - path: freq_map.cpp
+      - path: ngspell.cpp
+    artifacts:
+      - freq_umap
+      - freq_map
+      - ngspell
+    clang_tidy_config: "/etc/clang-tidy"
+
+  - name: Task 04
+    pattern: task-04-*
+    project:
+      - path: .clang-format
+      - path: .gitignore
+      - path: .gitlab-ci.yml
+      - path: Makefile
+      - path: Board.cpp
+      - path: Board.hpp
+      - path: mines.cpp
+    artifacts:
+      - mines
+    clang_tidy_config: "/etc/clang-tidy"
+
+  - name: Task 05
+    pattern: task-05-*
+    project:
+      - path: .clang-format
+      - path: .gitignore
+      - path: .gitlab-ci.yml
+      - path: Makefile
+      - path: main.cpp
+      - path: normpath.cpp
+      - path: normpath.hpp
+    artifacts:
+      - normpath
+    clang_tidy_config: "/etc/clang-tidy"
+
+  - name: Task 06
+    pattern: task-06-*
+    project:
+      - path: .clang-format
+      - path: .gitignore
+      - path: .gitlab-ci.yml
+      - path: Makefile
+      - path: calc.cpp
+    artifacts:
+      - calc
+    clang_tidy_config: "/etc/clang-tidy"
+  
+  - name: Task 07
+    pattern: task-07-*
+    project:
+      - path: .clang-format
+      - path: .gitignore
+      - path: .gitlab-ci.yml
+      - path: Makefile
+      - path: String.cpp
+      - path: String.hpp
+      - path: String.test.cpp
+    artifacts:
+      - string_test
+    clang_tidy_config: "/etc/clang-tidy"

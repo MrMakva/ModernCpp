@@ -1,0 +1,7 @@
+default:
+  image: registry.csc.sibsutis.ru/cpp/ci:2024
+
+build:
+  stage: build
+  script:
+    - csc_cpp_lint
