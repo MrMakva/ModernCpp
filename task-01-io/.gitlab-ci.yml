@@ -1,4 +1,0 @@
-include:
-  - project: 'ci'
-    file: 'templates/cpp-ci.yml'
-    ref: '2024'
